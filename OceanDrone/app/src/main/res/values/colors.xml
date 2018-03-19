@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#1BA2F2</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="lightRed">#2aD4005B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tabBkColor">#FFFFFF</color>
+    <color name="titleBkColor">#FF4B4B4B</color>
+    <color name="gray">#808080</color>
+    <color name="divider">#edeef0</color>
+    <color name="lightgray">#E5E5E5</color>
+    <color name="green">#60BCF3</color>
+    <color name="black">#000000</color>
+    <color name="app_bar_footer_background">#D2D8D2</color>
+    <color name="avatar_background1">#1BA2F2</color>
+    <color name="avatar_background2">#05a49c</color>
+    <color name="avatar_background3">#E85A43</color>
+    <color name="avatar_background4">#2D4059</color>
+    <color name="avatar_background5">#5A5964</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightBlue">#68ebef</color>
+    <color name="deepBlue">#22710a</color>
+    <color name="cyan">#21c69e</color>
+    <color name="deepYellow">#f1d144</color>
+</resources>

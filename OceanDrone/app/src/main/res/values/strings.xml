@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OceanDrone</string>
+    <string name="OceanDrone">OceanDrone</string>
+    <string name="communication">通信链路</string>
+    <string name="speed">速度</string>
+    <string name="angle">航向角</string>
+    <string name="begin_to_turn_back">√开始返航</string>
+    <string name="suspend">√暂停成功</string>
+    <string name="back">返航</string>
+    <string name="stop">停止</string>
+    <string name="voice">录音</string>
+    <string name="time">完成时间预估</string>
+    <string name="zero">"0"</string>
+    <string name="reveal">显示</string>
+</resources>

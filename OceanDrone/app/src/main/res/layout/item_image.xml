@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="340dp">
+
+    <RelativeLayout
+        android:id="@+id/course_angle"
+        android:layout_width="95dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/angle"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/angle" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/angleText"
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/angle"
+            android:background="@drawable/oval_shape"
+            android:text="@string/angle" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/quality"
+        android:layout_width="95dp"
+        android:layout_height="118dp"
+        android:layout_alignTop="@+id/course_angle"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/textView">
+
+
+        <ImageView
+            android:id="@+id/link_quality"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/quality" />
+
+        <ImageView
+            android:id="@+id/path2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/link_quality"
+            android:src="@drawable/path2" />
+        <TextView
+            android:id="@+id/qualityText"
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/link_quality"
+            android:background="@drawable/oval_shape"
+            android:text="@string/communication" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="0"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/boat_speed"
+        android:layout_width="95dp"
+        android:layout_height="118dp"
+        android:layout_alignEnd="@+id/progressBar1"
+        android:layout_alignTop="@+id/quality">
+
+        <ImageView
+            android:id="@+id/speed"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/speed" />
+
+        <ImageView
+            android:id="@+id/path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView7"
+            android:src="@drawable/path" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/speedText"
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+            android:layout_below="@+id/speed"
+            android:layout_alignStart="@+id/speed"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oval_shape"
+            android:text="@string/speed" />
+    </RelativeLayout>
+
+
+    <!--<com.sjtu.oceandrone.circleimageview.CircleImageView
+        android:id="@+id/speed"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignStart="@+id/course_angle"
+        android:layout_alignTop="@+id/course_angle"
+        android:layout_marginStart="235dp"
+        android:src="@drawable/speed2" />-->
+
+
+
+    <oceandrone.ZzHorizontalProgressBar2
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/course_angle"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        app:zpb_bg_color="#ffffff"
+        app:zpb_gradient_from="#66cdaa"
+        app:zpb_gradient_to="#ffff00"
+        app:zpb_max="1000"
+        app:zpb_open_gradient="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignStart="@+id/progressBar1"
+        android:layout_below="@+id/course_angle"
+        android:alpha="0.0"
+        android:background="@drawable/oval_shape"
+        android:text="完成时间预估"
+        android:textColor="@color/white" />
+
+    <oceandrone.ZzHorizontalProgressBar3
+        android:id="@+id/progressBar2"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        android:layout_alignStart="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="14dp"
+        android:visibility="visible"
+        app:zpb_bg_color="#ffffff"
+        app:zpb_gradient_from="#66cdaa"
+        app:zpb_gradient_to="#ffff00"
+        app:zpb_max="300"
+        app:zpb_open_gradient="true"/>
+
+    <oceandrone.ZzHorizontalProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="350dp"
+        android:layout_height="23dp"
+        android:layout_alignStart="@+id/progressBar2"
+        android:layout_below="@+id/progressBar2"
+        android:layout_marginTop="11dp"
+        android:visibility="visible"
+        app:zpb_bg_color="#ffffff"
+        app:zpb_gradient_from="#66cdaa"
+        app:zpb_gradient_to="#ffff00"
+        app:zpb_max="300"
+        app:zpb_open_gradient="true"
+        app:zpb_padding="1dp" />
+
+
+
+</RelativeLayout>
+

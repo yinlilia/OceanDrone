@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lightBlue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/OceanDrone"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ViewStub
+        android:id="@+id/item_image"
+        android:layout="@layout/item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:visibility="visible" />
+    <ViewStub
+        android:id="@+id/item_hint"
+        android:layout="@layout/item_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/voice"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="140dp"
+        android:background="@drawable/microphone"
+        android:contentDescription="@string/voice"
+        android:focusableInTouchMode="true" />
+
+
+
+</LinearLayout>
